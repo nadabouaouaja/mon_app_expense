@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/nadabouaouaja/expense-tracker.git'
+                git branch: 'main', url: ' https://github.com/nadabouaouaja/mon_app_expense.git'
             }
         }
 
