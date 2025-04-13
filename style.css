@@ -1,0 +1,83 @@
+/* Couleurs douces et harmonieuses */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #4a7c59;
+}
+
+a {
+    color: #4a7c59;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+a:hover {
+    color: #3b5f46;
+}
+
+table {
+   
+    width: 100%;
+    margin-top: 20px;
+  
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+form {
+   
+    margin-top: 20px;
+    margin: 0 auto 30px auto;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dee2e6;
+    text-align: left;
+}
+
+th {
+    background-color: #dff0d8;
+    color: #4a7c59;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: #4a7c59;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #3b5f46;
+}
+
+input, select {
+    padding: 8px 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
