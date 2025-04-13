@@ -28,13 +28,13 @@ pipeline {
             }
         }
 
-        stage('Deploy to Kubernetes') {
-            steps {
-                bat 'kubectl apply -f deployment.yaml'
-                bat 'kubectl apply -f service.yaml'
-            }
-        }
-
+       stage('Deploy to Kubernetes') {
+    steps {
+        bat "dir" // debug
+        bat "kubectl apply -f %WORKSPACE%\\deployment.yaml"
+        bat "kubectl apply -f %WORKSPACE%\\service.yaml"
+    }
+}
         stage('Verify Deployment') {
             steps {
                 bat 'kubectl get pods'
