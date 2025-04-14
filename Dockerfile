@@ -1,7 +1,6 @@
 # Étape 1 : Build - avec une image plus légère
 FROM python:3.11-slim
 
-
 # Éviter les invites interactives (utile pour apt-get)
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -22,6 +21,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Copier le reste des fichiers du projet
 COPY . .
+
+# Corriger les permissions des fichiers (version améliorée)
+RUN find templates/ static/ -type f -exec chmod 644 {} \; && \
+    find templates/ static/ -type d -exec chmod 755 {} \;
 
 # Exposer le port (Flask par exemple)
 EXPOSE 5000
